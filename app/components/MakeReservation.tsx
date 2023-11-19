@@ -80,7 +80,7 @@ export function MakeReservation() {
           <Image src={decreaseIcon} alt="Decrease" />
         </button>
         <input
-          value={qty}
+          // value={qty}
           className="qty | focus:outline-none block border-b-2 text-xl text-center pb-2 pr-12 w-full font-bold "
         ></input>
         <label className="absolute mx-auto w-full text-center left-3 bottom-3 text-xl ">
