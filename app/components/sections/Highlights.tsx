@@ -76,7 +76,7 @@ export function Highlights() {
             className="w-80 h-auto hidden md:flex lg:flex"
           />
           <div className="space-y-2 lg:pl-10">
-            <h3 className="text-2xl px-10 lg:px-0">Summer Fruit Chocolate Mousse</h3>
+            <h3 className="text-2xl px-16 lg:px-0">Summer Fruit Chocolate Mousse</h3>
             <p className="font-light text-xl leading-7 lg:w-4/5">
               Creamy mousse combined with summer fruits and dark chocolate
               shavings.
