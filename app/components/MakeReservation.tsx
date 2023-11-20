@@ -79,9 +79,9 @@ export function MakeReservation() {
         </button>
         <input
           value={qty}
-          className="qty | focus:outline-none block border-b-2 text-xl text-center pb-2 pr-12 w-full font-bold "
+          className="qty | focus:outline-none block border-b-2 text-xl text-center pb-2 pr-[4.5rem] w-full font-semibold"
         ></input>
-        <label className="absolute mx-auto w-full text-center left-3 bottom-3 text-xl ">
+        <label className="absolute mx-auto w-full text-center left-1 bottom-3 text-xl font-semibold">
           {qty > 1 ? "people" : "person"}
         </label>
         <button

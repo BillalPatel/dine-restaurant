@@ -6,9 +6,6 @@ import Link from "next/link";
 
 import Button from "../Button";
 
-import enjoyablePlaceMobileImg from "../../../assets/homepage/enjoyable-place-mobile@2x.jpg";
-import enjoyablePlaceTabletImg from "../../../assets/homepage/enjoyable-place-tablet@2x.jpg";
-import enjoyablePlaceDesktopImg from "../../../assets/homepage/enjoyable-place-desktop@2x.jpg";
 import familyGatheringMobileImg from "../../../assets/homepage/family-gathering-mobile@2x.jpg";
 import familyGatheringTabletImg from "../../../assets/homepage/family-gathering-tablet@2x.jpg";
 import familyGatheringDesktopImg from "../../../assets/homepage/family-gathering-desktop@2x.jpg";
@@ -97,12 +94,12 @@ export function FamilyGathering() {
     <div className="relative">
       <Image
         src={patternCurveTopRightImg}
-        alt=""
+        alt="Pattern curve"
         className="absolute z-0 -left-52 hidden lg:flex"
       />
       <Image
         src={patternLinesImg}
-        alt=""
+        alt="Pattern line"
         className="absolute z-10 left-32 top-32 hidden lg:flex"
       />
       <section className="family-gathering-section | flex justify-items-center justify-normal flex-col lg:flex-row mx-auto px-8 py-16 lg:mx-32">
