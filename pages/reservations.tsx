@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-import ReservationsHero from "../components/sections/ReservationsHero";
-import MakeReservation from "../components/MakeReservation";
+import "../app/globals.css";
 
-import patternBottomRight from "../../assets/patterns/pattern-curve-bottom-right.svg";
-import patternLines from "../../assets/patterns/pattern-lines.svg";
+import ReservationsHero from "../app/components/sections/ReservationsHero";
+import Footer from "@/app/components/Footer";
+import MakeReservation from "../app/components/MakeReservation";
+
+import patternBottomRight from "../assets/patterns/pattern-curve-bottom-right.svg";
+import patternLines from "../assets/patterns/pattern-lines.svg";
 
 export function Reservations() {
   return (
@@ -24,6 +27,7 @@ export function Reservations() {
           />
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
