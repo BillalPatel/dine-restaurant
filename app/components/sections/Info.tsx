@@ -81,7 +81,7 @@ export function Info() {
             <div className="mt-14 mb-10 lg:mb-0">
               <Line />
             </div>
-            <h1 className="px-12 text-3xl lg:text-6xl lg:px-0">
+            <h1 className="px-6 text-3xl lg:text-6xl lg:px-0">
               The most locally sourced food
             </h1>
             <h3 className="font-light text-xl leading-7">

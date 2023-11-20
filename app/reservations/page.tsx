@@ -11,7 +11,7 @@ export function Reservations() {
   return (
     <div>
       <ReservationsHero />
-      <div className="lg:absolute relative lg:right-32 lg:top-36 -top-32">
+      <div className="lg:absolute relative lg:right-56 -top-36 lg:top-72 z-50">
         <MakeReservation />
       </div>
       <section className="pattern hidden lg:flex">

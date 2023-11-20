@@ -10,7 +10,7 @@ import increaseIcon from "../../assets/icons/icon-plus.svg";
 import Image from "next/image";
 
 export function MakeReservation() {
-  const [qty, setQty] = useState<number>(5);
+  const [qty, setQty] = useState<number>(1);
 
   function handleDecreaseClick() {
     if (qty < 2) {
@@ -28,13 +28,11 @@ export function MakeReservation() {
     }
   }
 
-  function handleError() {
-    
-  }
+  function handleError() {}
 
   return (
     <div
-      className="px-12 bg-white flex flex-col space-y-10 w-10/12 lg:w-full mx-auto max-w-xl py-12"
+      className="px-9 lg:px-12 bg-white flex flex-col space-y-10 w-10/12 lg:w-full mx-auto max-w-xl py-12"
       style={{ boxShadow: "0px 75px 100px -50px rgba(56, 66, 85, 0.50)" }}
     >
       <Input placeholder="Name" width="full" />
@@ -80,11 +78,11 @@ export function MakeReservation() {
           <Image src={decreaseIcon} alt="Decrease" />
         </button>
         <input
-          // value={qty}
+          value={qty}
           className="qty | focus:outline-none block border-b-2 text-xl text-center pb-2 pr-12 w-full font-bold "
         ></input>
         <label className="absolute mx-auto w-full text-center left-3 bottom-3 text-xl ">
-          {qty > 1 ? 'people' : 'person'}
+          {qty > 1 ? "people" : "person"}
         </label>
         <button
           className="border-b-2 cursor-pointer px-6 pb-3 z-50"
@@ -93,13 +91,7 @@ export function MakeReservation() {
           <Image src={increaseIcon} alt="Increase" />
         </button>
       </div>
-      <Button
-        textContent={"make reservation"}
-        bgColour={"black"}
-        hoverBgColour={"white"}
-        hoverTextColour={"black"}
-        textColour={"black"}
-      />
+      <Button textContent="Make Reservation" />
     </div>
   );
 }

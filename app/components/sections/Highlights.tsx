@@ -12,9 +12,9 @@ import chocolateMousseDesktopTabletImg from "../../../assets/homepage/chocolate-
 
 export function Highlights() {
   return (
-    <section className="flex flex-col lg:flex-row px-8 pt-20 mx-auto text-center text-white bg-black highlights-section justify-items-center justify-normal lg:px-32">
+    <section className="flex flex-col lg:flex-row px-8 pt-20 mx-auto text-center lg:text-left text-white bg-black highlights-section justify-items-center justify-normal lg:px-32">
       <div className="space-y-6 lg:text-left flex flex-col justify-center">
-        <div className="mb-12">
+        <div className="lg:mb-12 mb-8">
           <Line />
         </div>
         <h1 className="text-3xl lg:text-6xl px-6 lg:px-0 lg:w-4/6">
@@ -25,7 +25,7 @@ export function Highlights() {
           our diner’s favourites. Our menu is revamped every season.
         </h3>
       </div>
-      <div className="highlight-images | my-20">
+      <div className="highlight-images | mt-14 mb-20 lg:my-20">
         <div className="space-y-10 lg:text-left mb-16 lg:mb-7 flex flex-col lg:flex-row">
           <Image
             src={salmonFilletMobileImg}
@@ -34,12 +34,12 @@ export function Highlights() {
           />
           <Image
             src={salmonFilletDesktopTabletImg}
-            alt="Chocolate mousse"
-            className="w-full h-auto hidden md:flex lg:flex"
+            alt="Salmon fillet"
+            className="w-80 h-auto hidden md:flex lg:flex"
           />
           <div className="space-y-2 lg:pl-10">
             <h3 className="text-2xl">Seared Salmon Fillet</h3>
-            <p className="font-light text-xl leading-7">
+            <p className="font-light text-xl leading-7 lg:w-4/5">
               Our locally sourced salmon served with a refreshing buckwheat
               summer salad.
             </p>
@@ -54,11 +54,11 @@ export function Highlights() {
           <Image
             src={filletMignonDesktopTabletImg}
             alt="Fillet mignon"
-            className="w-full h-auto hidden md:flex lg:flex"
+            className="w-80 h-auto hidden md:flex lg:flex"
           />
-          <div className="space-y-2">
+          <div className="space-y-2 lg:pl-10">
             <h3 className="text-2xl">Rosemary Filet Mignon</h3>
-            <p className="font-light text-xl leading-7">
+            <p className="font-light text-xl leading-7 lg:w-4/5">
               Our prime beef served to your taste with a delicious choice of
               seasonal sides.
             </p>
@@ -73,11 +73,11 @@ export function Highlights() {
           <Image
             src={chocolateMousseDesktopTabletImg}
             alt="Chocolate mousse"
-            className="w-full h-auto hidden md:flex lg:flex"
+            className="w-80 h-auto hidden md:flex lg:flex"
           />
-          <div className="space-y-2">
-            <h3 className="text-2xl">Summer Fruit Chocolate Mousse</h3>
-            <p className="font-light text-xl leading-7">
+          <div className="space-y-2 lg:pl-10">
+            <h3 className="text-2xl px-10 lg:px-0">Summer Fruit Chocolate Mousse</h3>
+            <p className="font-light text-xl leading-7 lg:w-4/5">
               Creamy mousse combined with summer fruits and dark chocolate
               shavings.
             </p>

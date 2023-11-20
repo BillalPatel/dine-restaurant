@@ -5,6 +5,7 @@ import readyBgMobileImg from "../../../assets/homepage/ready-bg-mobile@2x.jpg";
 import readyBgTabletImg from "../../../assets/homepage/ready-bg-tablet@2x.jpg";
 import readyBgDesktopImg from "../../../assets/homepage/ready-bg-desktop@2x.jpg";
 import Button from "../Button";
+import Link from "next/link";
 
 export function Ready() {
   return (
@@ -30,14 +31,9 @@ export function Ready() {
             Ready to make a reservation?
           </h1>
           <div className="mx-auto pt-10 lg:pt-0" style={{ marginTop: 0 }}>
-            <Button
-              textContent="book a table"
-              bgColour="white"
-              hoverBgColour="white"
-              textColour="white"
-              hoverTextColour="black"
-              borderColour="white"
-            />
+            <Link href="/reservations">
+              <Button textContent="Book a Table" variant={"transparent"} />
+            </Link>
           </div>
         </div>
       </div>

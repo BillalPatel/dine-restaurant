@@ -6,8 +6,7 @@ import Logo from "../Logo";
 import mobileHero from "../../../assets/booking/hero-bg-mobile@2x.jpg";
 import tabletHero from "../../../assets/booking/hero-bg-tablet@2x.jpg";
 import desktopHero from "../../../assets/booking/hero-bg-desktop@2x.jpg";
-import patternBottomRight from "../../../assets/patterns/pattern-curve-bottom-right.svg";
-import patternLines from "../../../assets/patterns/pattern-lines.svg";
+
 import Button from "../Button";
 
 export function ReservationsHero() {
@@ -27,13 +26,7 @@ export function ReservationsHero() {
                 please feel free to call on the phone number below. We’ll be
                 happy to accommodate you.
               </h3>
-              <Button
-                textContent={"reserve place"}
-                bgColour={"black"}
-                hoverBgColour={"white"}
-                hoverTextColour={"white"}
-                textColour={"white"}
-              />
+              <Button textContent="Reserve Place" variant={"transparent"} />
             </div>
           </div>
           <div className="lg:w-2/4"></div>
@@ -60,7 +53,7 @@ export function ReservationsHero() {
 
       <div className="desktop-hero | -z-50 hidden md:hidden lg:flex">
         <Image src={desktopHero} alt="Hero" />
-        <div className="absolute lg:mx-40 flex flex-row lg:mt-16">
+        <div className="absolute lg:mx-32 flex flex-row lg:mt-12">
           <div>
             <Logo />
             <div className="heading | text-white lg:text-left lg:mt-60 lg:space-y-6 lg:pr-32">

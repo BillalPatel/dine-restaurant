@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "../Button";
 
@@ -31,22 +32,12 @@ export function FamilyGathering() {
   const [tabletImage, setTabletImage] = useState<any>("");
   const [desktopImage, setDesktopImage] = useState<any>("");
 
-  const [optionSelected, setOptionSelected] = useState(
-    "family" || "special" || "social"
-  );
-
   const [isFamilyGatheringOptionSelected, setIsFamilyGatheringOptionSelected] =
     useState(false);
   const [isSpecialEventsOptionSelected, setIsSpecialEventsOptionSelected] =
     useState(false);
   const [isSocialEventsOptionSelected, setIsSocialEventsOptionSelected] =
     useState(false);
-
-  function sett() {
-    if (optionSelected === "family") {
-      return;
-    }
-  }
 
   function handleFamilyGatheringClick() {
     setIsFamilyGatheringOptionSelected(true);
@@ -131,18 +122,22 @@ export function FamilyGathering() {
           className="w-3/4 h-3/4 shadow-2xl hidden md:hidden lg:flex lg:mt-28 max-w-2xl"
         />
         <div className="lg:mx-32 lg:my-52">
-          <div className="text-content | text-center lg:text-left mx-6 lg:mx-0 lg:pr-32 flex flex-col lg:flex-col-reverse space-y-10 lg:space-y-0">
-            <div className="options | space-y-4 mx-auto lg:mx-0">
-              <div className="flex flex-row relative  ">
+          <div className="text-content | text-center lg:text-left mx-3 lg:mx-0 lg:pr-32 flex flex-col lg:flex-col-reverse space-y-10 lg:space-y-0">
+            <div className="options | lg:space-y-4 space-y-6 mx-auto lg:mx-0 mt-10 lg:my-0">
+              <div className="flex flex-row relative">
                 {isFamilyGatheringOptionSelected && (
                   <Image
                     src={divideLineImg}
-                    alt=""
-                    className=" absolute -left-36 w-28 -z-50 top-2 opacity-70"
+                    alt="Divider"
+                    className="absolute lg:-left-36 lg:w-28 -z-50 lg:top-2 top-8 left-16 opacity-70"
                   />
                 )}
                 <h2
-                  className="opacity-50 hover:opacity-100 cursor-pointer tracking-widest mt-10 lg:mt-0 lg:mx-0 mx-auto"
+                  className={`hover:opacity-100 text-lg lg:text-base cursor-pointer tracking-widest lg:mx-0 mx-auto ${
+                    isFamilyGatheringOptionSelected
+                      ? "opacity-100"
+                      : "opacity-50"
+                  }`}
                   onClick={handleFamilyGatheringClick}
                 >
                   FAMILY GATHERING
@@ -152,15 +147,14 @@ export function FamilyGathering() {
                 {isSpecialEventsOptionSelected && (
                   <Image
                     src={divideLineImg}
-                    alt=""
-                    // className="absolute -left-36 w-28 -z-50 top-2 opacity-70"
-                    className="absolute top-8 left-12 opacity-70"
+                    alt="Divider"
+                    className="absolute lg:-left-36 lg:w-28 -z-50 lg:top-2 top-8 left-16 opacity-70"
                   />
                 )}
                 <h2
-                  className={`${
-                    isSpecialEventsOptionSelected ? "opacity-10" : "opacity-50"
-                  } hover:opacity-100 cursor-pointer tracking-widest mx-auto lg:mx-0`}
+                  className={`hover:opacity-100 text-lg lg:text-base cursor-pointer tracking-widest lg:mx-0 mx-auto ${
+                    isSpecialEventsOptionSelected ? "opacity-100" : "opacity-50"
+                  }`}
                   onClick={handleSpecialEventsClick}
                 >
                   SPECIAL EVENTS
@@ -170,13 +164,14 @@ export function FamilyGathering() {
                 {isSocialEventsOptionSelected && (
                   <Image
                     src={divideLineImg}
-                    alt=""
-                    // className="lg:absolute -left-36 w-28 -z-50 top-2 opacity-70"
-                    className="absolute top-8 left-12 opacity-70"
+                    alt="Divider"
+                    className="absolute lg:-left-36 lg:w-28 -z-50 lg:top-2 top-8 left-16 opacity-70"
                   />
                 )}
                 <h2
-                  className="opacity-50 hover:opacity-100 cursor-pointer tracking-widest lg:mx-0 mx-auto"
+                  className={`hover:opacity-100 text-lg lg:text-base cursor-pointer tracking-widest lg:mx-0 mx-auto ${
+                    isSocialEventsOptionSelected ? "opacity-100" : "opacity-50"
+                  }`}
                   onClick={handleSocialEventsClick}
                 >
                   SOCIAL EVENTS
@@ -189,14 +184,9 @@ export function FamilyGathering() {
                 <p className="font-light text-lg leading-7">{content}</p>
               </div>
               <div className="lg:my-16 md:my-12 my-10">
-                <Button
-                  textContent="book a table"
-                  bgColour="black"
-                  hoverBgColour="white"
-                  textColour="black"
-                  hoverTextColour="black"
-                  borderColour="black"
-                />
+                <Link href="/reservations">
+                  <Button textContent="Book a Table" />
+                </Link>
               </div>
             </div>
           </div>
