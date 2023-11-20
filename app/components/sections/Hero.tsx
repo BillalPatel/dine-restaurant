@@ -14,10 +14,10 @@ export function Hero() {
     <section className="hero">
       <div className="mobile-hero | -z-50 md:hidden lg:hidden font-light">
         <Image src={mobileHero} alt="" />
-        <div className="absolute top-28 bottom-0 left-0 right-0 grid items-center content-center space-y-6 h-3/4 place-items-center">
+        <div className="absolute top-40 bottom-0 left-0 right-0 grid items-center content-center space-y-6 h-3/4 place-items-center">
           <Logo />
           <div className="mx-6 px-6 lg:px-0 text-center text-white space-y-6">
-            <h1 className="px-10 text-3xl leading-10">
+            <h1 className="px-14 text-3xl leading-10">
               Exquisite dining since 1989
             </h1>
             <h3 className="leading-7 text-lg px-1">
